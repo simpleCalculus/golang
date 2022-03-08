@@ -21,6 +21,12 @@ func main() {
 }
 
 /*
+Computers typically compute the square root of x using a loop. Starting with 
+some guess z, we can adjust z based on how close z² is to x, producing a better guess:
+z -= (z*z - x) / (2*z)
+Repeating this adjustment makes the guess better and better until we reach an 
+answer that is as close to the actual square root as can be.
+
  If you are interested in the details of the algorithm, the z² − x above is 
  how far away z² is from where it needs to be (x), and the division by 2z is 
  the derivative of z², to scale how much we adjust z by how quickly z² is 
